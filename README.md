@@ -109,4 +109,5 @@ pytest -m api -v
 pytest tests/ui/test_login.py -v
 ## Ejecutar con reporte HTML detallado
 pytest --html=reports/html/report.html --self-contained-html
-
+### Autor
+Juliana Londoño León
