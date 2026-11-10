@@ -1,0 +1,22 @@
+[
+  {
+    "test_name": "login_exitoso",
+    "email": "test_user@example.com",
+    "password": "Test123!",
+    "expected_result": "success"
+  },
+  {
+    "test_name": "login_password_incorrecto",
+    "email": "test_user@example.com",
+    "password": "WrongPassword",
+    "expected_result": "error",
+    "expected_message": "Your email or password is incorrect!"
+  },
+  {
+    "test_name": "login_email_invalido",
+    "email": "invalid-email",
+    "password": "Test123!",
+    "expected_result": "error",
+    "expected_message": "Your email or password is incorrect!"
+  }
+]

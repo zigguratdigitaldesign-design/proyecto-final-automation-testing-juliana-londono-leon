@@ -1,0 +1,17 @@
+[
+  {
+    "test_name": "buscar_producto_existente",
+    "search_term": "blue top",
+    "expected_results": 1
+  },
+  {
+    "test_name": "buscar_producto_popular",
+    "search_term": "dress",
+    "expected_results": 1
+  },
+  {
+    "test_name": "buscar_producto_inexistente",
+    "search_term": "xyznonexistentproduct12345",
+    "expected_results": 0
+  }
+]

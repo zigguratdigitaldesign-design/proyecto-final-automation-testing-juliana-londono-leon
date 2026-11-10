@@ -1,0 +1,37 @@
+{
+  "valid_users": [
+    {
+      "test_name": "obtener_usuario_existente_id_2",
+      "user_id": 2,
+      "expected_status": 200,
+      "expected_name": "janet.weaver@reqres.in"
+    },
+    {
+      "test_name": "obtener_usuario_existente_id_1",
+      "user_id": 1,
+      "expected_status": 200,
+      "expected_name": "george.bluth@reqres.in"
+    }
+  ],
+  "invalid_users": [
+    {
+      "test_name": "obtener_usuario_inexistente",
+      "user_id": 999,
+      "expected_status": 404
+    }
+  ],
+  "create_users": [
+    {
+      "test_name": "crear_usuario_valido",
+      "name": "John Doe",
+      "job": "QA Engineer",
+      "expected_status": 201
+    },
+    {
+      "test_name": "crear_usuario_sin_job",
+      "name": "Jane Smith",
+      "job": "",
+      "expected_status": 201
+    }
+  ]
+}
