@@ -1,6 +1,6 @@
 # Framework de Automatización de Pruebas - Proyecto Final
 
-## 1. 🎯 Propósito del Proyecto
+## 1. Propósito del Proyecto
 
 Este repositorio contiene un **framework de automatización de pruebas integral** desarrollado en Python como trabajo final integrador del curso. El objetivo es validar tanto la **interfaz de usuario (UI)** como los **servicios backend (API)** del sitio [Automation Exercise](https://automationexercise.com), asegurando la calidad del software mediante:
 
@@ -15,7 +15,7 @@ El framework está diseñado para ser **escalable, mantenible y reutilizable**, 
 
 ---
 
-## 2. 🛠️ Tecnologías Utilizadas
+## 2. Tecnologías Utilizadas
 
 | Categoría | Tecnología | Versión | Propósito |
 |-----------|------------|---------|-----------|
@@ -30,52 +30,11 @@ El framework está diseñado para ser **escalable, mantenible y reutilizable**, 
 
 ---
 
-## 3. 📂 Estructura del Proyecto
-proyecto-final-automation-testing-juliana-londono-leon/
-│
-├── pages/ # Page Object Model (UI)
-│ ├── init.py
-│ ├── base_page.py # Clase base con métodos genéricos
-│ ├── login_page.py # Página de login
-│ ├── home_page.py # Página principal
-│ ├── search_page.py # Página de resultados de búsqueda
-│ ├── cart_page.py # Página del carrito
-│ └── product_page.py # Página de detalle de producto
-│
-├── tests/ # Casos de prueba
-│ ├── ui/ # Pruebas de UI (Selenium)
-│ │ ├── test_login.py # Login exitoso y fallido (parametrizado)
-│ │ ├── test_search.py # Búsqueda de productos (parametrizado)
-│ │ ├── test_cart.py # Agregar al carrito y ver detalle
-│ │ └── test_negative_scenarios.py # Escenarios negativos
-│ └── api/ # Pruebas de API (Requests)
-│ ├── test_get_users.py # Método GET
-│ ├── test_post_users.py # Método POST
-│ └── test_delete_users.py # Método DELETE
-│
-├── data/ # Fuentes externas de datos
-│ ├── users_data.json # Datos de login/registro
-│ ├── search_data.json # Datos de búsqueda
-│ └── api_data.json # Datos de pruebas API
-│
-├── utils/ # Utilidades y configuraciones
-│ ├── init.py
-│ ├── logger.py # Sistema de logging
-│ └── api_client.py # Cliente HTTP encapsulado
-│
-├── reports/ # Generados automáticamente (NO subir a Git)
-│ ├── html/ # Reportes HTML de pytest
-│ ├── screenshots/ # Capturas de fallos
-│ └── logs/ # Archivos de log
-│
-├── conftest.py # Fixtures globales y hooks de pytest
-├── pytest.ini # Configuración de pytest
-├── requirements.txt # Dependencias del proyecto
-├── .gitignore # Archivos ignorados por Git
-└── README.md # Este archivo
+## 3. Estructura del Proyecto
+![alt text](image.png)
+![alt text](image-1.png)
 
-
-### 🎨 Principios de Diseño Aplicados
+### Principios de Diseño Aplicados
 
 - **Page Object Model (POM)**: Separación entre la lógica de los tests y la interacción con las páginas.
 - **DRY (Don't Repeat Yourself)**: Métodos reutilizables en `BasePage`.
@@ -84,7 +43,7 @@ proyecto-final-automation-testing-juliana-londono-leon/
 
 ---
 
-## 4. 📦 ¿Cómo Instalar las Dependencias?
+## 4. ¿Cómo Instalar las Dependencias?
 
 ### Requisitos Previos
 - Python 3.8 o superior instalado ([descargar aquí](https://www.python.org/downloads/))
